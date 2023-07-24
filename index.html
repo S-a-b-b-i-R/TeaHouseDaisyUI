@@ -27,6 +27,13 @@
             }
         }
     </script>
+    <style>
+        hr {
+            height: 1;
+            /* color: inherit; */
+            color: black;
+        }
+    </style>
 
 </head>
 
@@ -274,43 +281,57 @@
     </main>
 
     <footer class="p-10 bg-red-200 text-base-content">
-        <div class="flex justify-between my-24 pr-24">
+        <div class="flex flex-row-reverse md:flex-row md:justify-between my-24">
             <img src="./images/cup.png" alt="">
             <p>
                 <span>Ready to get started?</span>
                 <button class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] w-48 text-white">Get Started</button>
             </p>
         </div>
-        <div class=" footer ">
-            <div>
-                <span class=" footer-title">Services</span>
-                <a class="link link-hover">Branding</a>
-                <a class="link link-hover">Design</a>
-                <a class="link link-hover">Marketing</a>
-                <a class="link link-hover">Advertisement</a>
+        <div class="grid grid-cols-2 md:flex md:flex-row lg:flex-row">
+            <div class=" footer place-items-start items-start ">
+                <div>
+                    <span class=" footer-title">Services</span>
+                    <a class="link link-hover">Branding</a>
+                    <a class="link link-hover">Design</a>
+                    <a class="link link-hover">Marketing</a>
+                    <a class="link link-hover">Advertisement</a>
+                </div>
+                <div>
+                    <span class="footer-title">Company</span>
+                    <a class="link link-hover">About us</a>
+                    <a class="link link-hover">Contact</a>
+                    <a class="link link-hover">Jobs</a>
+                    <a class="link link-hover">Press kit</a>
+                </div>
+
             </div>
-            <div>
-                <span class="footer-title">Company</span>
-                <a class="link link-hover">About us</a>
-                <a class="link link-hover">Contact</a>
-                <a class="link link-hover">Jobs</a>
-                <a class="link link-hover">Press kit</a>
-            </div>
-            <div>
-                <span class="footer-title">Legal</span>
-                <a class="link link-hover">Terms of use</a>
-                <a class="link link-hover">Privacy policy</a>
-                <a class="link link-hover">Cookie policy</a>
-            </div>
-            <div>
-                <span class="footer-title">Newsletter</span>
-                <div class="form-control w-80">
-                    <label class="label">
-                        <span class="label-text">Enter your email address</span>
-                    </label>
-                    <div class="relative">
-                        <input type="text" placeholder="username@site.com" class="input input-bordered w-full pr-16" />
-                        <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+            <div class=" footer md:place-items-end md:items-start ">
+                <div>
+                    <span class="footer-title">Legal</span>
+                    <a class="link link-hover">Terms of use</a>
+                    <a class="link link-hover">Privacy policy</a>
+                    <a class="link link-hover">Cookie policy</a>
+                </div>
+                <div>
+                    <span class="footer-title">Newsletter</span>
+                    <div class="form-control w-52 md:w-80">
+                        <label class="label">
+                            <span class="label-text">Enter your email address</span>
+                        </label>
+                        <div class="relative py-4">
+                            <input type="text" placeholder="username@site.com"
+                                class=" input border-1 border-slate-950 bg-transparent w-full" />
+                            <hr>
+                            <button
+                                class="absolute top-4 right-0 btn btn-circle bg-gradient-to-r from-[#FF8938] to-[#F00]  "><svg
+                                    width="7" height="13" viewBox="0 0 7 13" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.914062 0.924316L6.13145 6.14171L0.914062 11.3591" stroke="white"
+                                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
